@@ -1,9 +1,9 @@
-package com.javapractice.datastructures.binarytree.isfullbinarytree;
+package com.javapractice.datastructures.binarytree.fullbinarytree;
 
 import com.javapractice.datastructures.binarytree.constants.InitialiseNodes;
 import com.javapractice.datastructures.binarytree.constants.Node;
 
-import static com.javapractice.datastructures.binarytree.isfullbinarytree.Methods.isFull;
+import static com.javapractice.datastructures.binarytree.fullbinarytree.Methods.isFull;
 
 public class Main {
     public static void main(String[] args) {

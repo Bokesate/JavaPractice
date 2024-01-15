@@ -1,9 +1,9 @@
-package com.javapractice.datastructures.binarytree.isperfectbinarytree;
+package com.javapractice.datastructures.binarytree.perfectbinarytree;
 
 import com.javapractice.datastructures.binarytree.constants.InitialiseNodes;
 import com.javapractice.datastructures.binarytree.constants.Node;
 
-import static com.javapractice.datastructures.binarytree.isperfectbinarytree.Methods.isPerfect;
+import static com.javapractice.datastructures.binarytree.perfectbinarytree.Methods.isPerfect;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.javapractice.datastructures.binarytree.isperfectbinarytree;
+package com.javapractice.datastructures.binarytree.perfectbinarytree;
 
 import com.javapractice.datastructures.binarytree.constants.Node;
 
