@@ -1,4 +1,4 @@
-package com.javapractice.datastructures;
+package com.javapractice.datastructures.binarytree.constants;
 
 public class Pair<K, V> {
     private final K key;

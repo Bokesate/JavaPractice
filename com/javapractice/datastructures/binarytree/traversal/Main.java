@@ -1,4 +1,8 @@
-package com.javapractice.datastructures;
+package com.javapractice.datastructures.binarytree.traversal;
+
+import com.javapractice.datastructures.binarytree.constants.InitialiseNodes;
+import com.javapractice.datastructures.binarytree.constants.Node;
+import com.javapractice.datastructures.binarytree.constants.Pair;
 
 import java.util.Queue;
 import java.util.LinkedList;
@@ -10,52 +14,34 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
 
-        Node<Character> a = new Node<>('A');
-        Node<Character> b = new Node<>('B');
-        Node<Character> c = new Node<>('C');
-        Node<Character> d = new Node<>('D');
-        Node<Character> e = new Node<>('E');
-        Node<Character> f = new Node<>('F');
-        Node<Character> g = new Node<>('G');
-        Node<Character> h = new Node<>('H');
-
-        a.setLeftChild(b);
-        a.setRightChild(c);
-
-        c.setLeftChild(d);
-        c.setRightChild(e);
-
-        d.setLeftChild(f);
-        d.setRightChild(h);
-
-        e.setRightChild(g);
+        Node<?> nodes = InitialiseNodes.initialiseNodes();
 
         System.out.println("BreadthFirst Traversal");
-        breadthFirst(a);
+        breadthFirst(nodes);
         System.out.println();
         System.out.println();
 
         System.out.println("DepthFirst InOrder Traversal");
-        inOrderStack(a);
+        inOrderStack(nodes);
         System.out.println();
         System.out.println("DepthFirst InOrder Traversal Recursive");
-        inOrderRecursive(a);
+        inOrderRecursive(nodes);
         System.out.println();
         System.out.println();
 
         System.out.println("DepthFirst PreOrder Traversal");
-        preOrderStack(a);
+        preOrderStack(nodes);
         System.out.println();
         System.out.println("DepthFirst PreOrder Traversal Recursive");
-        preOrderRecursive(a);
+        preOrderRecursive(nodes);
         System.out.println();
         System.out.println();
 
         System.out.println("DepthFirst PostOrder Traversal");
-        postOrderStack(a);
+        postOrderStack(nodes);
         System.out.println();
         System.out.println("DepthFirst PostOrder Traversal Recursive");
-        postOrderRecursive(a);
+        postOrderRecursive(nodes);
     }
 
     public static <T> void breadthFirst(Node<T> root){
